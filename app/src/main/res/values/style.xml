@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="round" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">80dp</item>
+        <item name="color">@color/black</item>
+    </style>
+    <style name="round_small" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">32dp</item>
+        <item name="color">@color/black</item>
+    </style>
+</resources>

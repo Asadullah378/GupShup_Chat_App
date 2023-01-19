@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddContacts"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:background="@color/black">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/back_icon"
+            app:tint="@color/white"
+            android:layout_marginVertical="14dp"
+            android:id="@+id/backBtn"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:text="Add Contacts"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/white"
+            android:gravity="center_vertical"
+            android:textSize="25dp"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:id="@+id/search_box"
+        android:background="@color/black">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:backgroundTint="#BDB8B8"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="20dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="Search"
+                android:paddingLeft="15dp"
+                android:textColor="@color/black"
+                android:textColorHint="#716A6A"
+                android:id="@+id/search_txt"
+
+                />
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/search_icon"
+            app:tint="@color/white"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:id="@+id/search_btn"
+            />
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/RecyclerViewAddContacts"
+        />
+
+</LinearLayout>
+
+
+

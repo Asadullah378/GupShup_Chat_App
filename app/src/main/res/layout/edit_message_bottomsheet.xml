@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/black">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#30ffffff"
+        app:cardCornerRadius="20dp">
+
+        <EditText
+            android:id="@+id/edit_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Enter New Message"
+            android:gravity="center_vertical"
+            android:background="@null"
+
+            android:paddingLeft="15dp"
+            android:textColor="@color/white"
+            android:textColorHint="#CDBCBC" />
+
+    </androidx.cardview.widget.CardView>
+    =
+
+    <android.widget.Button
+        android:id="@+id/edit_msg_btn"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginHorizontal="80dp"
+        android:background="@drawable/gradient"
+        android:text="Update Message"
+        android:textColor="@color/white" />
+
+
+</LinearLayout>
